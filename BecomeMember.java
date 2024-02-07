@@ -54,6 +54,6 @@ public class BecomeMember {
         String BecomeAMember= "//button[@class=\"CGae mYRh qYgv ovgq _VyP\"]";
         Thread.sleep(2000);
         driver.findElement(By.xpath(BecomeAMember)).click();
-        //Thread.sleep(2000);
+        Thread.sleep(2000);
     }
 }
