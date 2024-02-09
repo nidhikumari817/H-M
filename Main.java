@@ -8,7 +8,16 @@ public class Main {
 
         // Object
         WebDriver driver = new ChromeDriver();
-        driver.get("https://www2.hm.com/en_in/igndex.html");
+        driver.get("https://google.com");
+        Thread.sleep(1000);
+        driver.navigate().refresh();
+        Thread.sleep(1000);
+        driver.navigate().to("https://www2.hm.com/en_in/index.html");
+        Thread.sleep(1000);
+        driver.navigate().back();
+        Thread.sleep(1000);
+        driver.navigate().forward();
+        Thread.sleep(1000);
         driver.manage().window().maximize();
         String signinBtnXpath= "//button[@class=\"CGae mYRh vEfo __5DXf\"]";
         String acceptCookiesXpath= "//button[@id=\"onetrust-accept-btn-handler\"]";
